@@ -6,10 +6,12 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel"
-function News() {
+import { NewsType } from '@/types/data'
+interface Props {
+    items: NewsType[]
+}
+function News(props: Props) {
     const plugin = React.useRef(
         Autoplay({ delay: 2000, stopOnInteraction: true })
     )
@@ -23,20 +25,19 @@ function News() {
                 plugins={[plugin.current]}
 
             >
-                <CarouselContent className="-ml-1 ">
-                    <CarouselItem className="max-md:px-5 md:basis-1/2 lg:basis-[30%]">
-                        <CardNews />
-                    </CarouselItem>
-                    <CarouselItem className="max-md:px-5 md:basis-1/2 lg:basis-[30%]">
-                        <CardNews />
-                    </CarouselItem>
-                    <CarouselItem className="max-md:px-5 md:basis-1/2 lg:basis-[30%]">
-                        <CardNews />
-                    </CarouselItem>
-                    <CarouselItem className="max-md:px-5 md:basis-1/2 lg:basis-[30%]">
-                        <CardNews />
-                    </CarouselItem>
 
+                <CarouselContent className="-ml-1 ">
+                    {props.items.map((item, id) => (
+                        <CarouselItem key={id} className="max-md:px-5 md:basis-1/2 lg:basis-[30%]">
+                            <CardNews
+                                title={item.title}
+                                img={item.img}
+                                author={item.author}
+                                date={item.date}
+                                id={item.id} url={''}
+                            />
+                        </CarouselItem>
+                    ))}
                 </CarouselContent>
             </Carousel>
 

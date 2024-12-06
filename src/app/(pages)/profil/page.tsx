@@ -10,7 +10,6 @@ function Profil() {
   return (
     <LayoutComponent>
       <ProfilCompany />
-      <ProfilHistory/>
       <Curiculum 
         title={"Kurikulum Pembelajaran"}
         description="Beberapa kurikulum bahan ajar di MDT Al Musyarokah"

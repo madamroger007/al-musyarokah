@@ -11,12 +11,14 @@ function ProfilCompany() {
                 <div className="w-full flex-col justify-center items-start gap-5 inline-flex">
                     <h2 className=" text-[#1dc1b6] text-2xl font-semibold font-['Fredoka'] leading-[30.12px] tracking-wide">MDT AL Musyarokah</h2>
                     <h1 className=" text-black text-4xl font-bold font-['Fredoka'] leading-[60.24px] tracking-wider">Tentang Madrasah</h1>
-                    <p className="text-[#333333] md:text-xl text-lg font-medium font-['Fredoka'] leading-loose tracking-wide"><q>Assalamualaikum warahmatullahi wabarakatuh. Salam sejahtera bagi kita semua. Saya berharap bahwa dengan adanya website MDT Al Musyarokah ini, kita dapat lebih mudah berkomunikasi dan berbagi informasi, serta dapat meningkatkan kualitas dan kesadaran kita terhadap pentingnya pendidikan. Saya berharap bahwa melalui website ini, kita dapat memperoleh manfaat dan kebermanfaatan yang lebih baik, serta dapat meningkatkan kualitas hidup kita dan masyarakat sekitar kita. Terima kasih.</q> </p>
+                    <p className="text-[#333333] md:text-xl text-lg font-medium font-['Fredoka'] leading-loose tracking-wide">
+                        Madrasah Diniyah Takmiliyah (MDT) Al - Musyarokah adalah lembaga pendidikan agama non formal yang didirikan pada tanggal 12 Agustus 2008 oleh Ketua DKM Bapak Zaenal dan sebagai kepala MDT adalah Lily Soemarti. MDT Al-Musyarokah  terletak di Komplek Sanggar Mas Lestari RW 12 Desa Tarajusari Kecamatan Banjaran Kabupaten Bandung. Merupakan sekolah agama non formal yang sampai sekarang dikepalai oleh Lily Sumarti membawai kelas ula dan wusto.  Kelas Ula setara dengan kelas TK, kelas 1, kelas 2, kelas 3, kelas 4, kelas 5 dan kelas 6. sedangkan kelas Wustho setara dengan SLTP. Pembelajaran di MDT berdasar kurikulum dari Kementrian Agama Republik Indonesia dan sudah mendapat Ijin Operasional dan no Statistik sejak tahun 2008.
+                    </p>
 
                 </div>
                 <div className="w-full flex-col justify-center items-center inline-flex">
                     <Image src="/img/elemen/bg.svg" alt="logo" width={1280} height={1280} className='w-full' priority={true} />
-                    <div className=" text-black text-[26px] font-medium font-['Fredoka'] leading-loose tracking-wide">Kepala Madrasah</div>
+                    <div className=" text-black text-[26px] font-medium font-['Fredoka'] leading-loose tracking-wide">MDT Al Musyarokah</div>
                 </div>
             </section>
         </div>

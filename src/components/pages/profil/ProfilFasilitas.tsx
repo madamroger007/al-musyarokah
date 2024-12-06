@@ -6,10 +6,9 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel"
 import CardFasilitas from '@/components/elemen/card/CardFasilitas'
+import { dataFasilitas } from '@/utils/data'
 function ProfilFasilitas() {
     const plugin = React.useRef(
         Autoplay({ delay: 2000, stopOnInteraction: true })
@@ -25,18 +24,14 @@ function ProfilFasilitas() {
 
             >
                 <CarouselContent className="-ml-1 ">
-                    <CarouselItem className="max-md:px-5 md:basis-1/2 lg:basis-[30%]">
-                        <CardFasilitas />
-                    </CarouselItem>
-                    <CarouselItem className="max-md:px-5 md:basis-1/2 lg:basis-[30%]">
-                        <CardFasilitas />
-                    </CarouselItem>
-                    <CarouselItem className="max-md:px-5 md:basis-1/2 lg:basis-[30%]">
-                        <CardFasilitas />
-                    </CarouselItem>
-                    <CarouselItem className="max-md:px-5 md:basis-1/2 lg:basis-[30%]">
-                        <CardFasilitas />
-                    </CarouselItem>
+
+                    {dataFasilitas.map((item, id) => (
+                        <CarouselItem key={id} className="max-md:px-5 md:basis-1/2 lg:basis-[30%]">
+                            <CardFasilitas img={item.img} title={item.title} />
+                        </CarouselItem>
+
+                    ))}
+
 
                 </CarouselContent>
             </Carousel>

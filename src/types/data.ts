@@ -27,3 +27,20 @@ export type VisiMisi = {
     item: VisiMisiItem[];
     type: string
 };
+
+
+export type NewsType = {
+    id: number;
+    img: string;
+    title: string;
+    date: string;
+    description: string;
+    author: string;
+}
+
+
+export type FasilitasType = {
+    id: number;
+    img: string;
+    title: string;
+}

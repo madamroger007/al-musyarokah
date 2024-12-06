@@ -17,8 +17,8 @@ function Curiculum(props: CuriculumProps) {
             </div>
             <div className="relative md:px-[30px] py-[99px] flex flex-wrap justify-center items-center gap-[30px] ">
 
-                {props.items.map(item => (
-                    <CardCuriculum key={item.id} name={item.name} description={item.description}
+                {props.items.map((item,id) => (
+                    <CardCuriculum key={id} name={item.name} description={item.description}
                         icon={
                             item.icon
                         }

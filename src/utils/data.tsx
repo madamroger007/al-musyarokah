@@ -1,4 +1,4 @@
-import { CuriculumItem, LightgalleryImage, VisiMisi } from "@/types/data";
+import { CuriculumItem, FasilitasType, LightgalleryImage, NewsType, VisiMisi } from "@/types/data";
 
 export const dataCuriculum: CuriculumItem[] = [
   {
@@ -167,7 +167,28 @@ export const DataImg: LightgalleryImage[] = [
 
     caption: "After Rain (Jeshu John - designerspics.com)",
   }
+  ,
+  {
+    src: "/img/manajemen/galeri/f4.jpeg",
+    width: 1280,
+    height: 780,
 
+    caption: "After Rain (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "/img/manajemen/galeri/f5.jpeg",
+    width: 1280,
+    height: 780,
+
+    caption: "After Rain (Jeshu John - designerspics.com)",
+  },
+  {
+    src: "/img/manajemen/galeri/f6.jpeg",
+    width: 1280,
+    height: 780,
+
+    caption: "After Rain (Jeshu John - designerspics.com)",
+  }
 ]
 
 
@@ -178,7 +199,7 @@ export const DataVisiMisi: VisiMisi[] = [
     item: [
       {
         id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.",
+        desc: "mencetak generasi Akhlakul Karimah",
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -196,26 +217,7 @@ export const DataVisiMisi: VisiMisi[] = [
           </svg>
         ),
       },
-      {
-        id: 2,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.",
-        icon: (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-            />
-          </svg>
-        ),
-      },
+   
     ],
   },
 
@@ -225,7 +227,7 @@ export const DataVisiMisi: VisiMisi[] = [
     item: [
       {
         id: 1,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.",
+        desc: "menjadi Khalifah rahmatan lilalamiin",
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -243,40 +245,43 @@ export const DataVisiMisi: VisiMisi[] = [
           </svg>
         ),
       },
-      {
-        id: 2,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.",
-        icon: (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-            />
-          </svg>
-        ),
-      },
+     
     ],
   },
 ];
 
 
-export const dataNews = [
-  { id: 1, img: '/img/elemen/bg.svg', title: 'Pengumuman', date: '20 Januari 2023', author: 'Admin' },
-  { id: 2, img: '/img/elemen/bg.svg', title: 'Berita', date: '20 Januari 2023', author: 'Admin' },
-  { id: 3, img: '/img/elemen/bg.svg', title: 'Kegiatan', date: '20 Januari 2023', author: 'Admin' },
-  { id: 4, img: '/img/elemen/bg.svg', title: 'Prestasi', date: '20 Januari 2023', author: 'Admin' },
-  { id: 5, img: '/img/elemen/bg.svg', title: 'Berita', date: '20 Januari 2023', author: 'Admin' },
-  { id: 6, img: '/img/elemen/bg.svg', title: 'Kegiatan', date: '20 Januari 2023', author: 'Admin' },
-  { id: 7, img: '/img/elemen/bg.svg', title: 'Prestasi', date: '20 Januari 2023', author: 'Admin' },
-  { id: 8, img: '/img/elemen/bg.svg', title: 'Berita', date: '20 Januari 2023', author: 'Admin' },
-  { id: 9, img: '/img/elemen/bg.svg', title: 'Kegiatan', date: '20 Januari 2023', author: 'Admin' },
-  { id: 10, img: '/img/elemen/bg.svg', title: 'Prestasi', date: '20 Januari 2023', author: 'Admin' },
+export const dataNews: NewsType[] = [
+  { id: 1, img: '/img/elemen/bg.svg', title: 'Pengumuman', date: '20 Januari 2023', author: 'Admin', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.' },
+  { id: 2, img: '/img/elemen/bg.svg', title: 'Berita', date: '20 Januari 2023', author: 'Admin', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.' },
+  { id: 3, img: '/img/elemen/bg.svg', title: 'Kegiatan', date: '20 Januari 2023', author: 'Admin', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.' },
+  { id: 4, img: '/img/elemen/bg.svg', title: 'Prestasi', date: '20 Januari 2023', author: 'Admin', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.' },
+  { id: 5, img: '/img/elemen/bg.svg', title: 'Berita', date: '20 Januari 2023', author: 'Admin', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.' },
+  { id: 6, img: '/img/elemen/bg.svg', title: 'Kegiatan', date: '20 Januari 2023', author: 'Admin', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.' },
+  { id: 7, img: '/img/elemen/bg.svg', title: 'Prestasi', date: '20 Januari 2023', author: 'Admin', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.' },
+  { id: 8, img: '/img/elemen/bg.svg', title: 'Berita', date: '20 Januari 2023', author: 'Admin', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.' },
+  { id: 9, img: '/img/elemen/bg.svg', title: 'Kegiatan', date: '20 Januari 2023', author: 'Admin', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.' },
+  { id: 10, img: '/img/elemen/bg.svg', title: 'Prestasi', date: '20 Januari 2023', author: 'Admin', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.' },
+]
+
+
+export const dataFasilitas: FasilitasType[] = [
+  {
+    id: 1,
+    title: 'Ruang Kelas',
+    img: '/img/fasilitas/f3.jpeg',
+    
+  },
+  {
+    id: 2,
+    title: 'Tempat Ibadah',
+    img: '/img/fasilitas/f1.jpeg',
+    
+  },
+  {
+    id: 3,
+    title: 'Lapangan',
+    img: '/img/fasilitas/f2.jpeg',
+    
+  },
 ]

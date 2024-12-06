@@ -15,7 +15,7 @@ function About() {
         </div>
         <div className="w-full relative">
           <h1 className=" text-black text-4xl font-bold font-['Fredoka'] leading-[45.18px] tracking-wide">About Madrasah</h1>
-          <p className=" text-black text-xl font-normal font-['Fredoka'] leading-[33.10px] tracking-wide">Keberanian bukan selalu tentang aksi besar, terkadang itu berarti mencoba hal baru, menjawab pertanyaan sulit, atau memberikan jawaban saat pelajaran ketika Anda benar-benar berusaha.</p>
+          <p className=" text-black text-xl font-normal font-['Fredoka'] leading-[33.10px] tracking-wide">Madrasah Diniyah Takmiliyah (MDT) Al - Musyarokah adalah lembaga pendidikan agama non formal yang didirikan pada tanggal 12 Agustus 2008 oleh Ketua DKM Bapak Zaenal dan sebagai kepala MDT adalah Lily Soemarti. MDT Al-Musyarokah  terletak di Komplek Sanggar Mas Lestari RW 12 Desa Tarajusari Kecamatan Banjaran Kabupaten Bandung.</p>
 
           <div className="relative w-full p-2 bg-[#19c1b6] rounded-[32px] flex justify-center items-center text-center">
 

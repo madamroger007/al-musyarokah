@@ -21,8 +21,8 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 const profile = [
-  { name: 'sambutan', description: 'Sambutan dari kepala madrasah', href: '/profil/sambutan', icon: ChatBubbleBottomCenterTextIcon },
   { name: 'profil', description: 'Tentang Madrasah', href: '/profil', icon: BuildingOfficeIcon },
+  { name: 'sambutan', description: 'Sambutan dari kepala madrasah', href: '/profil/sambutan', icon: ChatBubbleBottomCenterTextIcon },
   { name: 'visi & misi', description: 'Visi & Misi', href: '/profil/visimisi', icon: DocumentTextIcon },
 ]
 
@@ -90,8 +90,8 @@ export default function Navbar() {
             </PopoverPanel>
           </Popover>
 
-          <Link href="program" className="text-sm/6 font-semibold text-gray-900">
-            Program Kegiatan
+          <Link href="/program" className="text-sm/6 font-semibold text-gray-900">
+            Program
           </Link>
           <Link href="/berita" className="text-sm/6 font-semibold text-gray-900">
             Informasi
@@ -168,25 +168,25 @@ export default function Navbar() {
                   </PopoverPanel>
                 </Popover>
                 <Link
-                  href="program"
+                  href="/program"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Program Kegiatan
+                  Program
                 </Link>
                 <Link
-                  href="berita"
+                  href="/berita"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Berita
                 </Link>
                 <Link
-                  href="galeri"
+                  href="/galeri"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Galeri
                 </Link>
                 <Link
-                  href="kontak"
+                  href="/kontak"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Kontak Kami

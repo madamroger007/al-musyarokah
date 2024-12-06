@@ -12,30 +12,6 @@ type Props = {
 }
 
 
-function renderNextImage(
-    { alt = "", title, sizes }: RenderImageProps,
-    { photo, width, height }: RenderImageContext,
-) {
-    return (
-        <div
-            style={{
-                width: "100%",
-                position: "relative",
-                aspectRatio: `${width} / ${height}`,
-            }}
-        >
-            <Image
-                fill
-                src={photo}
-                alt={alt}
-                title={title}
-                sizes={sizes}
-                placeholder={"blurDataURL" in photo ? "blur" : undefined}
-            />
-        </div>
-    );
-}
-
 function Galeri(props: Props) {
     const [index, setIndex] = React.useState(-1);
 
@@ -49,9 +25,11 @@ function Galeri(props: Props) {
 
             <RowsPhotoAlbum
                 photos={props.items}
-                render={{ image: renderNextImage }}
-                targetRowHeight={50}
+                spacing={2}
+                skeleton={3}
+                rowConstraints={{ maxPhotos: 6 }}
                 onClick={({ index: current }) => setIndex(current)}
+                
                 sizes={{
                     size: "1168px",
                     sizes: [
