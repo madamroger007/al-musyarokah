@@ -196,6 +196,7 @@ export const DataVisiMisi: VisiMisi[] = [
   {
     type: "visi",
     title: "Visi Madrasah",
+    img:"/img/elemen/Bg.jpg",
     item: [
       {
         id: 1,
@@ -224,6 +225,7 @@ export const DataVisiMisi: VisiMisi[] = [
   {
     type: "misi",
     title: "Misi Madrasah",
+    img:"/img/elemen/Bg.jpg",
     item: [
       {
         id: 1,

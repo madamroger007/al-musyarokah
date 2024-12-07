@@ -17,7 +17,6 @@ async function Galeri() {
         };
     });
 
-    console.log(dataGaleri)
 
     return (
         <LayoutComponent>

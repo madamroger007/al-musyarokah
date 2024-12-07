@@ -13,6 +13,7 @@ interface CardNewsProps {
 }
 function CardNews(props: CardNewsProps) {
     const { timeAgo } = ConvertTime(props.date);
+ 
     return (
         <Link href={`${props.url}`} className="max-w-[378.20px] pb-10 relative rounded-[32px] border border-[#666666]">
             <Image width={400} height={400} alt='News' className="relative rounded-tl-[32px] rounded-tr-[32px]" src={props.img} />

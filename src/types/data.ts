@@ -24,6 +24,7 @@ export type VisiMisiItem = {
 
 export type VisiMisi = {
     title: string;
+    img: string
     item: VisiMisiItem[];
     type: string
 };

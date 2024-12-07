@@ -11,14 +11,13 @@ async function Berita() {
     const dataBeritas = dataBerita.map((item: any) => {
         return {
             id: item.id,
-            title: item.name,
+            title: item.title,
             description: item.description,
             img: item.imageUrl,
             date: item.createdAt,
             author: "admin",
         };
     });
-
 
     return (
         <LayoutComponent>
